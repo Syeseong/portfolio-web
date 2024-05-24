@@ -1,5 +1,9 @@
 @charset "UTF-8";
 
+//utils
+@import "./utils/mixin";
+@import "./utils/vars";
+
 //base
 @import "./base/fonts";
 @import "./base/reset";
@@ -15,6 +19,3 @@
 @import "./components/sns";
 @import "./components/stack";
 //pages
-//utils
-@import "./utils/mixin";
-@import "./utils/vars";
