@@ -36,6 +36,7 @@ figure,
 figcaption {
     margin: 0;
     padding: 0;
+
 }
 
 // 링크 초기화
@@ -89,4 +90,29 @@ img {
 #skip a:focus,
 #skip a:active {
     top: 10px;
+}
+
+// 폰트
+:root {
+    font-family: var(--main-font), var(--text-font);
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: 400;
+    color: var(--white000);
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-text-size-adjust: 100%;
+
+
+    @media (max-width: 800px) {
+        font-size: 14px;
+        line-height: 1.4;
+    }
+}
+
+// 배경색상
+body {
+    background-color: var(--mainBg-color);
 }
