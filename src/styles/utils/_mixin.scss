@@ -27,3 +27,9 @@
     top: 0;
     width: 100%;
 }
+
+// 우측 정렬
+@mixin position-right {
+    position: absolute;
+    right: 0;
+}

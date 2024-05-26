@@ -8,20 +8,22 @@ import Contact from '../components/Contact'
 import Footer from '../components/Footer'
 import Sns from '../components/Sns'
 import Main from '../components/Main'
+import MobileNav from '../components/MobileNav'
 
 const Home = () => {
     return (
         <>
             <Skip />
             <Header />
-            <Sns />
-            <Main>
+            <MobileNav />
+            {/* <Sns /> */}
+            {/* <Main>
                 <Intro />
                 <Stack />
                 <Port />
                 <Contact />
-            </Main>
-            <Footer />
+            </Main> */}
+            {/* <Footer /> */}
         </>
     )
 }
