@@ -8,7 +8,7 @@ const MyProvider = ({ children }) => {
     const toggleMenu = () => {
         setShow(!show)
     }
-
+    
     return (
         <MyContext.Provider value={{ show, setShow, toggleMenu }}>
             {children}

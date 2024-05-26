@@ -17,12 +17,12 @@ const Home = () => {
             <Header />
             <MobileNav />
             {/* <Sns /> */}
-            {/* <Main>
+            <Main>
                 <Intro />
                 <Stack />
                 <Port />
                 <Contact />
-            </Main> */}
+            </Main>
             {/* <Footer /> */}
         </>
     )

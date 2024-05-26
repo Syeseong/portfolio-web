@@ -1,13 +1,12 @@
 #header {
+    @include position-fixed;
     font-family: var(--main-font);
     background-color: var(--black000);
-    position: fixed;
-    width: 100%;
     z-index: 999;
 }
 
 .header__inner {
-    padding: 10px;
+    padding: 0.625rem;
     display: flex;
     align-items: center;
     // border: 1px solid var(--black100);

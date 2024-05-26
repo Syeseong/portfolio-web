@@ -6,6 +6,7 @@
     display: none;
     transition: 0.5s;
     z-index: 998;
+    background-color: var(--black000);
 
     @media (max-width : 800px) {
         display: block;
