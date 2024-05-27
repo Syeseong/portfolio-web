@@ -3,8 +3,8 @@ import '@fortawesome/fontawesome-free/css/all.min.css';
 const Intro = () => {
     // ------------Intro Main Text ------------------
     const [visibleLetters, setVisibleLetters] = useState([]);
-    const text = "S EO YE SEONG  PORTFOLIO"
-    const breaKIdx = 14;
+    const text = "S EO YE SEONG PORTFOLIO"
+    const breaKIdx = 13;
     useEffect(() => {
 
         let idx = 0;
@@ -36,6 +36,9 @@ const Intro = () => {
     return (
         <section id="intro">
             <div className="intro__inner">
+                <div className="intro__800">
+                    <p>MOBILE</p>
+                </div>
                 <div className="intro__text__container">
                     {visibleLetters.map((char, idx) => (
                         idx === breaKIdx
@@ -44,10 +47,7 @@ const Intro = () => {
                     ))}
                 </div>
                 <div className={`intro__scroll__text ${scrollTxt ? "show" : ""}`}>
-                    <p>SCROLL TO</p>
-                </div>
-                <div className={`intro__arrow ${arrowTxt ? "show" : ""}`}>
-                    <i className="fas fa-arrow-down"></i>
+                    <p>SCROLL PAGE</p>
                 </div>
             </div>
         </section>

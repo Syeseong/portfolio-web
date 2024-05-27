@@ -4,6 +4,10 @@
         "link": "#intro"
     },
     {
+        "name": "About",
+        "link": "#about"
+    },
+    {
         "name": "Stack",
         "link": "#stack"
     },

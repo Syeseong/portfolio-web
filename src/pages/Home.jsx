@@ -9,6 +9,7 @@ import Footer from '../components/Footer'
 import Sns from '../components/Sns'
 import Main from '../components/Main'
 import MobileNav from '../components/MobileNav'
+import About from '../components/About'
 
 const Home = () => {
     return (
@@ -19,6 +20,7 @@ const Home = () => {
             {/* <Sns /> */}
             <Main>
                 <Intro />
+                <About />
                 <Stack />
                 <Port />
                 <Contact />
