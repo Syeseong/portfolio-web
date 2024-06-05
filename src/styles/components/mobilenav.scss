@@ -1,7 +1,8 @@
 #mobilenav {
-    position: absolute;
-    top: calc(-100vh - -93px);
-    height: calc(100vh - 93px);
+    // border: 1px solid red;
+    position: fixed;
+    top: calc(-100vh - 89px);
+    height: calc(100vh - 89px);
     width: 100%;
     display: none;
     transition: 0.5s;
@@ -12,7 +13,7 @@
         display: block;
 
         &.show {
-            top: 93px;
+            top: 88px;
         }
     }
 }

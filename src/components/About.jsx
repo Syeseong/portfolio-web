@@ -1,33 +1,8 @@
-import React, { useEffect, useRef } from 'react'
+import React, { useContext } from 'react'
+import { MyContext } from '../context/MyContex'
 
 const About = () => {
-    const letterRef = useRef([]);
-    const addToRefs = ((el) => {
-        if (el && !letterRef.current.includes(el)) {
-            letterRef.current.push(el);
-        }
-    })
-
-    useEffect(() => {
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach((entry) => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add("fade-in-visible")
-                } else {
-                    entry.target.classList.remove("fade-in-visible")
-                }
-            });
-        }, { threshold: 0.4 });
-        letterRef.current.forEach((ref) => {
-            observer.observe(ref);
-        })
-
-        return () => {
-            letterRef.current.forEach((ref) => {
-                observer.unobserve(ref);
-            })
-        }
-    }, [])
+    const { addToRefs } = useContext(MyContext)
     return (
         <section id="about">
             <div className="about__inner">
