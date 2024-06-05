@@ -3,8 +3,8 @@ import '@fortawesome/fontawesome-free/css/all.min.css';
 const Intro = () => {
     // ------------Intro Main Text ------------------
     const [visibleLetters, setVisibleLetters] = useState([]);
-    const text = "S EO YE SEONG PORTFOLIO"
-    const breaKIdx = 13;
+    const text = "F RONT END PORTPOLIO"
+    const breaKIdx = 9;
     useEffect(() => {
 
         let idx = 0;
@@ -21,17 +21,12 @@ const Intro = () => {
 
     // ----------- Intro Sub Text --------------------
     const [scrollTxt, setScrollTxt] = useState(false);
-    const [arrowTxt, setArrowTxt] = useState(false);
     useEffect(() => {
         const scrollTimer = setTimeout(() => {
             setScrollTxt(true);
-        }, 2500);
-
-        const arrowTimer = setTimeout(() => {
-            setArrowTxt(true)
-        }, 3500);
-        return () => clearTimeout(scrollTimer, arrowTimer)
-    }, [scrollTxt, arrowTxt])
+        }, 2200);
+        return () => clearTimeout(scrollTimer)
+    }, [scrollTxt])
     // ------------------------------------------------
     return (
         <section id="intro">

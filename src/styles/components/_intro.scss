@@ -49,19 +49,24 @@
 
         &:nth-child(1),
         &:nth-child(2),
-        &:nth-child(3) {
+        &:nth-child(3),
+        &:nth-child(4),
+        &:nth-child(5) {
             color: #C7FF61;
         }
+
     }
 }
 
 .intro__scroll__text {
     position: absolute;
     bottom: 100px;
-    left: -50%;
+    left: 50%;
+    transform: translateX(-50%);
     transition: 1s;
-    font-size: 2vw;
+    font-size: 1.5vw;
     font-weight: 400;
+    opacity: 0;
     color: var(--white400);
 
     @media(max-width : 800px) {
@@ -69,8 +74,7 @@
     }
 
     &.show {
-        left: 50%;
-        transform: translateX(-50%);
+        opacity: 1;
     }
 }
 
