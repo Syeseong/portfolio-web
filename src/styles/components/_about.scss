@@ -1,11 +1,20 @@
 #about {
     height: 160vh;
-    // border: 1px solid red;
+
+    border: 1px solid red;
+
+    @media(max-width: 800px) {
+        height: 130vh;
+    }
 }
 
 .about__inner {
     // border: 1px solid red;
     padding: 3rem;
+
+    @media(max-width : 800px) {
+        text-align: center;
+    }
 }
 
 .about__text {
@@ -55,6 +64,11 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+
+    @media(max-width: 800px) {
+        width: 50vw;
+        height: 50vw;
+    }
 }
 
 .fade-in {
