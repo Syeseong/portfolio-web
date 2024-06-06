@@ -1,0 +1,40 @@
+#port {
+    height: 100vh;
+    border: 1px solid red;
+    overflow: hidden;
+}
+
+.port__inner {}
+
+.port__wrap {
+    display: flex;
+    height: 100%;
+    width: 500vw;
+
+    .port__item {
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 8vw;
+        text-transform: uppercase;
+        font-weight: 800;
+        // background-color: white;
+    }
+
+    .p1 {
+
+        ul {
+            li {
+                &:nth-child(2) {
+                    color: #C7FF61;
+                }
+            }
+        }
+    }
+
+
+
+
+}
