@@ -27,16 +27,17 @@ const MyProvider = ({ children }) => {
                 }
             })
         }, { threshold: 0.6 });
-        letterRef.current.forEach((ref) => {
+        const currentRefs = letterRef.current;
+        currentRefs.forEach((ref) => {
             observer.observe(ref);
         })
 
         return () => {
-            letterRef.current.forEach((ref) => {
+            currentRefs.forEach((ref) => {
                 observer.unobserve(ref);
             })
         }
-    }, [letterRef.current])
+    }, [])
     return (
         <MyContext.Provider value={{ show, setShow, toggleMenu, addToRefs }}>
             {children}
