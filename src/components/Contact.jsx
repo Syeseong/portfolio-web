@@ -23,7 +23,7 @@ const Contact = () => {
                             INSTARTGRAM
                         </a>
                     </div>
-                    <div className="email">email : sy051398@naver.com</div>
+                    <div className="email">sy051398@naver.com</div>
                     <div className="phone">tel : 010 2018 0035</div>
                 </div>
             </div>
