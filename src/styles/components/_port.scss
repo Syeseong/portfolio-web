@@ -12,6 +12,8 @@
     width: 500vw;
 
     .port__item {
+        // border: 1px solid red;
+        position: relative;
         width: 100vw;
         height: 100vh;
         display: flex;
@@ -20,7 +22,96 @@
         font-size: 8vw;
         text-transform: uppercase;
         font-weight: 800;
+        background-color: var(--white100);
+
+        &:nth-child(1) {
+            background-color: var(--black000);
+        }
+
         // background-color: white;
+        .title {
+            color: var(--black100);
+            position: absolute;
+            // border: 1px solid red;
+            top: 7rem;
+            left: 5rem;
+        }
+
+        .img {
+            border: 1px solid var(--white200);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1),
+                0 1px 3px rgba(0, 0, 0, 0.08);
+            position: absolute;
+            top: 35%;
+            left: 5%;
+            border-radius: 15px;
+            width: 50%;
+            height: 50%;
+            background-image: url(../../assets/images/myportfolio-removebg-preview.png);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        .info {
+            // font-family: var(--text-font);
+            color: var(--black000);
+            font-weight: 400;
+            position: absolute;
+            border: 1px solid var(--white200);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1),
+                0 1px 3px rgba(0, 0, 0, 0.08);
+            border-radius: 15px;
+            font-size: 1.1vw;
+            top: 35%;
+            right: 5%;
+            width: 37%;
+            height: 50%;
+
+            .desc {
+                padding: 10px;
+                width: 100%;
+                height: 80%;
+                // border: 1px solid red;
+            }
+
+            .viewBox {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                // border: 1px solid blue;
+                width: 100%;
+                height: 20%;
+
+                .viewSite,
+                .viewCode {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    border: 1px solid var(--white200);
+                    width: 50%;
+                    height: 100%;
+
+                    &:hover {
+                        background-color: var(--white200);
+                    }
+
+                    a {
+                        width: 100%;
+                        height: 100%;
+                        // border: 1px solid red;
+                        display: flex;
+                        justify-content: center; // 수평 중앙 정렬
+                        align-items: center; // 수직 중앙 정렬
+
+                    }
+                }
+            }
+
+
+        }
+
+
     }
 
     .p1 {
