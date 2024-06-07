@@ -18,6 +18,7 @@ const MyProvider = ({ children }) => {
     })
 
     useEffect(() => {
+        // eslint-disable-next-line react-hooks/exhaustive-deps
         const observer = new IntersectionObserver((entries, observer) => {
             entries.forEach((entry) => {
                 if (entry.isIntersecting) {
