@@ -12,13 +12,13 @@ const Contact = () => {
                 </div>
                 <div className="contact__sns">
                     <div className="github">
-                        <a href="">
+                        <a href="#">
                             <FontAwesomeIcon icon={faGithub} />
                             GITHUB
                         </a>
                     </div>
                     <div className="instargram">
-                        <a href="">
+                        <a href="#">
                             <FontAwesomeIcon icon={faInstagram} />
                             INSTARTGRAM
                         </a>
