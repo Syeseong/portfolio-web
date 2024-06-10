@@ -9,10 +9,10 @@ const PortSection = ({ className, title, description }) => (
             <div className="desc">{description}</div>
             <div className="viewBox">
                 <div className="viewSite">
-                    <a href="#">SITE VIEW</a>
+                    <a href="https://bucolic-speculoos-b4a94b.netlify.app">SITE VIEW</a>
                 </div>
                 <div className="viewCode">
-                    <a href="#">CODE VIEW</a>
+                    <a href="https://bucolic-speculoos-b4a94b.netlify.app">CODE VIEW</a>
                 </div>
             </div>
         </div>
