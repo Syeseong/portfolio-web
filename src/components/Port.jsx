@@ -1,12 +1,14 @@
-import React, { useEffect, useRef } from 'react';
+import React, { useContext, useEffect, useRef } from 'react';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { portfolioItems } from '../data/portData';
 import PortSection from './PortSection';
+import { MyContext } from '../context/MyContex';
 
 gsap.registerPlugin(ScrollTrigger); //GSAP ScrollTrigger 플러그인 등록
 
 const Port = () => {
+    const { addToRefs } = useContext(MyContext);
     const portRef = useRef(null); //특정 DOM 요소를 참조하기 위해 사용
 
     useEffect(() => {
@@ -32,8 +34,8 @@ const Port = () => {
                 <div className="port__wrap">
                     <div className="port__item p1">
                         <ul>
-                            <li>my front</li>
-                            <li>portfolio</li>
+                            <li ref={addToRefs} className="fade-in">my front</li>
+                            <li ref={addToRefs} className="fade-in">portfolio</li>
                         </ul>
                     </div>
                     {portfolioItems.map((item, index) => (
