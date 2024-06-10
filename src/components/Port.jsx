@@ -1,7 +1,8 @@
-import React, { useContext, useEffect, useRef } from 'react';
+import React, { useEffect, useRef } from 'react';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import { MyContext } from '../context/MyContex';
+import { portfolioItems } from '../data/portData';
+import PortSection from './PortSection';
 
 gsap.registerPlugin(ScrollTrigger); //GSAP ScrollTrigger 플러그인 등록
 
@@ -35,77 +36,14 @@ const Port = () => {
                             <li>portfolio</li>
                         </ul>
                     </div>
-                    <div className="port__item p2">
-                        <div className="title">01</div>
-                        <div className="img"></div>
-                        <div className="info">
-                            <div className="desc">
-                                React를 활용해 쇼핑몰 웹 사이트를 개발하였습니다. 사이트는 ...사이트를 벤치마킹 하였으며, ...기능, ...기능, ...기능 과 ...라이브러리를 사용하여 개발하였습니다.
-                            </div>
-                            <div className="viewBox">
-                                <div className="viewSite">
-                                    <a href="#">SITE VIEW</a>
-                                </div>
-                                <div className="viewCode">
-                                    <a href="#">CODE VIEW</a>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                    <div className="port__item p3">
-                        <div className="title">02</div>
-                        <div className="img"></div>
-                        <div className="info">
-                            <div className="desc">
-                                React를 활용해 쇼핑몰 웹 사이트를 개발하였습니다. 사이트는 ...사이트를 벤치마킹 하였으며, ...기능, ...기능, ...기능 과 ...라이브러리를 사용하여 개발하였습니다.
-                            </div>
-                            <div className="viewBox">
-                                <div className="viewSite">
-                                    <a href="#">SITE VIEW</a>
-                                </div>
-                                <div className="viewCode">
-                                    <a href="#">CODE VIEW</a>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                    <div className="port__item p4">
-                        <div className="title">03</div>
-                        <div className="img"></div>
-                        <div className="info">
-                            <div className="desc">
-                                React를 활용해 쇼핑몰 웹 사이트를 개발하였습니다. 사이트는 ...사이트를 벤치마킹 하였으며, ...기능, ...기능, ...기능 과 ...라이브러리를 사용하여 개발하였습니다.
-                            </div>
-                            <div className="viewBox">
-                                <div className="viewSite">
-                                    <a href="#">SITE VIEW</a>
-                                </div>
-                                <div className="viewCode">
-                                    <a href="#">CODE VIEW</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="port__item p5">
-                        <div className="title">04</div>
-                        <div className="img"></div>
-                        <div className="info">
-                            <div className="desc">
-                                React를 활용해 쇼핑몰 웹 사이트를 개발하였습니다. 사이트는 ...사이트를 벤치마킹 하였으며, ...기능, ...기능, ...기능 과 ...라이브러리를 사용하여 개발하였습니다.
-                            </div>
-                            <div className="viewBox">
-                                <div className="viewSite">
-                                    <a href="#">SITE VIEW</a>
-                                </div>
-                                <div className="viewCode">
-                                    <a href="#">CODE VIEW</a>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
+                    {portfolioItems.map((item, index) => (
+                        <PortSection
+                            key={index}
+                            className={item.className}
+                            title={item.title}
+                            description={item.description}
+                        />
+                    ))}
                 </div>
             </div>
         </div>

@@ -2,9 +2,9 @@ import React, { useContext } from "react"
 import navItem from "../data/navItems.json"
 import { MyContext } from "../context/MyContex"
 const Header = () => {
-    const { show, toggleMenu, headerColor } = useContext(MyContext);
+    const { show, toggleMenu } = useContext(MyContext);
     return (
-        <header id="header" role="banner" className={`${headerColor ? "change" : ""}`}>
+        <header id="header" role="banner">
             <div className="header__inner">
                 <div className="header__logo">
                     <h1>

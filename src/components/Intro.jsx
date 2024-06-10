@@ -14,7 +14,7 @@ const Intro = () => {
             if (idx === text.length) {
                 clearInterval(interval);
             }
-        }, 100);
+        }, 90);
         return () => clearInterval(interval);
     }, [text])
     // ----------------------------------------------- 

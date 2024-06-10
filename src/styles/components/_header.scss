@@ -1,34 +1,9 @@
 #header {
     @include position-fixed;
     font-family: var(--main-font);
-    background-color: var(--black000);
     z-index: 999;
     transition: 0.5s ease;
-
-    &.change {
-        background-color: var(--white100);
-        color: var(--black000);
-
-        .header__nav__mobile {
-            span {
-                background-color: var(--black000);
-
-                &::before {
-                    background-color: var(--black000);
-                }
-
-                &::after {
-                    background-color: var(--black000);
-
-                }
-            }
-        }
-
-        p {
-            color: var(--black000);
-        }
-
-    }
+    backdrop-filter: blur(5px);
 }
 
 .header__inner {
